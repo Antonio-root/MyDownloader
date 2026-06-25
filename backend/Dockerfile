@@ -25,4 +25,4 @@ EXPOSE 3004
 ENV NODE_ENV=production
 ENV PORT=3004
 
-CMD ["node", "dist/server.js"]
+CMD ["node", "dist/index.js"]
