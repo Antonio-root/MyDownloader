@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext", // Permite que TypeScript respete los ES Modules de Node
+    "moduleResolution": "NodeNext", // Ayuda a Node a encontrar los archivos adecuadamente
+    "lib": [
+      "ES2022"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
