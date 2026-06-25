@@ -1,5 +1,5 @@
 # 1. Etapa de compilación (Build)
-FROM node:20-bullseye-slim AS builder
+FROM node:20-bookworm-slim AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
@@ -7,7 +7,7 @@ COPY . .
 RUN npm run build
 
 # 2. Etapa de producción (Run)
-FROM node:20-bullseye-slim AS runner
+FROM node:20-bookworm-slim AS runner
 WORKDIR /app
 
 # Instalar python3 y ffmpeg en el contenedor (requisitos de yt-dlp)
